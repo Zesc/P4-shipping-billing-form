@@ -1,0 +1,61 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+
+body{
+    background: linear-gradient(to top,#141E30, rgba(36, 59, 85, 0.8));
+    color: #d64d1c;
+}
+
+.container{
+    width: 50%;
+    padding-left: 10px;
+}
+
+input[name="address"]{
+    width: 56%;
+}
+
+label{
+    font-size: 15px;
+}
+
+.btn-style{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border-radius: 3px;
+    border: 1px solid rgba(214, 77, 28, 0.37);
+}
+
+.title{
+    position: relative;
+    border-bottom: 3px solid rgba(214, 77, 28, 0.82);
+    padding-bottom: 5px;
+}
+
+.title1{
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline;
+    padding: 10px 10px 10px 0;
+    font-weight: bold;
+}
+.title2{
+    position: absolute;
+    right: 0;
+    top: -14px;
+    display: inline;
+    color: rgba(214, 77, 28, 0.37);
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+.question{
+    font-size: 12px;
+}
