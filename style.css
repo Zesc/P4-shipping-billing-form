@@ -2,17 +2,13 @@
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
 
 body{
-    background: linear-gradient(to top,#141E30, rgba(36, 59, 85, 0.8));
-    color: #d64d1c;
+    background: #efefef;
+    color: #ff5619;
 }
 
 .container{
-    width: 50%;
+    width: 75%;
     padding-left: 10px;
-}
-
-input[name="address"]{
-    width: 56%;
 }
 
 label{
@@ -20,20 +16,20 @@ label{
 }
 
 .btn-style{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 3px;
+    padding: 5px 0 5px 5px;
     font-size: 16px;
     margin-bottom: 8px;
     margin-right: 8px;
     border-radius: 3px;
-    border: 1px solid rgba(214, 77, 28, 0.37);
+    border: 1px solid rgba(255, 86, 25, .5);
+    box-shadow: inset 0 0 2px 0 rgba(255, 86, 25, .4);
 }
 
 .title{
     position: relative;
-    border-bottom: 3px solid rgba(214, 77, 28, 0.82);
+    border-bottom: 3px solid #ff5619;
     padding-bottom: 5px;
+    margin-top: 20px;
 }
 
 .title1{
@@ -60,24 +56,11 @@ h1 {
     font-size: 12px;
 }
 
-.back-to-main{
-    position: relative;
-    clear: both;
-    text-align: center;
-    top: 30px;
-    margin-bottom: 20px;
-}
-.back-to-main > a{
-    text-decoration: none;
-    color: #d40000;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
-    border-radius: 2px;
-    padding: 10px;
-}
-
-.back-to-main > a:hover{
-    color: white;
-    background-color: red;
-    border-radius: 5px;
+select {
+    font-size: 16px;
+    border: 1px solid rgba(255, 86, 25, .5);
+    box-shadow: inset 0 0 2px 0 rgba(255, 86, 25, .4);
+    padding: 5px 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
