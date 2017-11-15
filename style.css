@@ -15,6 +15,26 @@ label {
     font-size: 15px;
 }
 
+.my-valid {
+    padding: 5px 0 5px 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 86, 25, .5);
+    background-color: #B7F0D0;
+}
+
+.my-invalid{
+    padding: 5px 0 5px 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border-radius: 3px;
+    background-color: rgba(247,76,83, 0.5);
+    border: 1px solid #f74c53;
+}
+
 input[type=number]::-webkit-outer-spin-buttoon,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -70,12 +90,8 @@ select {
     margin-bottom: 10px;
 }
 
-div.btn-continue-container {
-    width: 100%;
-    text-align: center;
-}
-
-div.btn-continue-container button {
+button#btn-continue {
+    display: block;
     margin: 17px auto;
     width: 20%;
     text-align: center;
@@ -89,11 +105,11 @@ div.btn-continue-container button {
     text-transform: uppercase;
 }
 
-div.btn-continue-container button:hover{
+button#btn-continue:hover{
     color: #fff;   
 }
 
-div.btn-continue-container button:focus,
-div.btn-continue-container button:active {
+button#btn-continue:focus,
+button#btn-continue:active {
     outline: none;
 }

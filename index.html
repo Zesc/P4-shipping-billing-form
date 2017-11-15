@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <title>Project 4: Shipping and Billing Form</title>
+    <script type="text/javascript" src="validation.js"></script>
 </head>
 <body>
-    <div class="container">
+    <form id='billing-form'>
+    <div id='billing-form' class="container">
         <h1>Shipping and Billing Form</h1>
+
+        <!-- Shipping Address -->
         <div class="title"><p class="title1">1. SHIPPING INFO</p><p class="title2">Required</p></div>
         <p class="question">Where do you want to ship your order</p>
         <p>Shipping Address</p>
@@ -74,8 +78,10 @@
         <input id="u-zipcode" class="input-style" type="number" name="zipcode" placeholder="Zipcode"><br/>
         <input id="u-phone-number" class="input-style" type="tel" name="pnumber" placeholder="xxx-xxx-xxxx"><br>
         <input id="u-email" class="input-style" type="text" name="email" placeholder="me@something.com"><br>
-        <input type="checkbox"><label>Shipping address is same as billing address</label>
+        <input id="check" type="checkbox"><label>Shipping address is same as billing address</label>
         <br />
+
+        <!-- Billing Adress -->
         <div class="title"><p class="title1">2. BILLING INFO</p><p class="title2">Required</p></div>
         <p class="question">What is your billing address?</p>
         <p>Billing Address</p>
@@ -142,9 +148,11 @@
         <input id="billing-zipcode" class="input-style" type="number" name="zipcode" placeholder="Zipcode"><br/>
         <input id="billing-pnumber" class="input-style" type="number" name="pnumber" placeholder="xxx-xxx-xxxx"><br/>
         <input id="billing-email" class="input-style" type="text" name="email" placeholder="me@something.com">
-        <div class='btn-continue-container'>
-            <button id='btn-continue'>Continue</button>
-        </div>    
+
+        <button id='btn-continue' type='click'>
+            Continue
+        </button>   
     </div>
+    </form>
 </body>
 </html>
