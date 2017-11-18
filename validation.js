@@ -37,11 +37,13 @@ btnContinue.addEventListener('click', function (event) {
 	var userLastName = document.getElementById("u-last-name");
 	var userAddress = document.getElementById("u-address");
 	var userCity = document.getElementById("u-city");
+	var userState = document.getElementById("u-state");
 	var userZipcode = document.getElementById("u-zipcode");
 	var userPhoneNumb = document.getElementById("u-phone-number");
 	var userEmail = document.getElementById("u-email");
 	var billingAddress = document.getElementById("billing-address");
 	var billingCity = document.getElementById("billing-city");
+	var billingState = document.getElementById("b-state");
 	var billingZipcode = document.getElementById("billing-zipcode");
 	var billingPnumber = document.getElementById("billing-pnumber");
 	var billingEmail = document.getElementById("billing-email");
@@ -76,6 +78,14 @@ btnContinue.addEventListener('click', function (event) {
 	} else {
 		userCity.className = 'my-valid';
 		userCity.setCustomValidity('');
+	}
+
+	if (userState.value === 'State') {
+		userState.className = 'my-invalid';
+		userState.setCustomValidity('Please choose your state');
+	} else {
+		userState.className = 'my-valid';
+		userState.setCustomValidity('');
 	}
 
 	if (isEmpty(userZipcode.value)) {
@@ -118,6 +128,14 @@ btnContinue.addEventListener('click', function (event) {
 		billingCity.setCustomValidity('');
 	}
 
+	if (billingState.value === 'State') {
+		billingState.className = 'my-invalid';
+		billingState.setCustomValidity('Please enter your City');
+	} else {
+		billingState.className = 'my-valid';
+		billingState.setCustomValidity('');
+	}
+
 	if (isEmpty(billingZipcode.value)) {
 		billingZipcode.className = 'my-invalid';
 		billingZipcode.setCustomValidity('Please enter your zipcode');
@@ -146,19 +164,22 @@ btnContinue.addEventListener('click', function (event) {
 addressCheck.addEventListener('click', function (event) {
 	var userAddress = document.getElementById("u-address");
 	var userCity = document.getElementById("u-city");
+	var userState = document.getElementById("u-state");
 	var userZipcode = document.getElementById("u-zipcode");
 	var userPhoneNumb = document.getElementById("u-phone-number");
 	var userEmail = document.getElementById("u-email");
 	var billingAddress = document.getElementById("billing-address");
 	var billingCity = document.getElementById("billing-city");
+	var billingState = document.getElementById("b-state");
 	var billingZipcode = document.getElementById("billing-zipcode");
 	var billingPnumber = document.getElementById("billing-pnumber");
 	var billingEmail = document.getElementById("billing-email");
 
 	billingAddress.value = userAddress.value;
 	billingCity.value = userCity.value;
+	billingState.value = userState.value;
 	billingZipcode.value = userZipcode.value;
 	billingPnumber.value = userPhoneNumb.value;
 	billingEmail.value = userEmail.value;
-} );
+});
 };
